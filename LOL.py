@@ -97,9 +97,9 @@ class downloader(object):
 
 
         name = hero_name+'-'+skin_name
+        name = name.replace('/', '')
 
-
-        return name, image_url
+        return name.replace(' ', ''), image_url
 
 
     def get_image(self, name, url):
